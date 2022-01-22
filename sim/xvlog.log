@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/sv_library/sim/tb.sv" into library work
+INFO: [VRFC 10-311] analyzing module Pipeline_Skid_Buffer
+INFO: [VRFC 10-311] analyzing module tb_skid_buffer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/sv_library/rtl/skid_buffer.sv" into library work
+INFO: [VRFC 10-311] analyzing module Pipeline_Skid_Buffer
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'Pipeline_Skid_Buffer' [C:/Xilinx/sv_library/rtl/skid_buffer.sv:2]
