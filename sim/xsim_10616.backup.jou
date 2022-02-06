@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# xsim v2021.1.1 (64-bit)
+# SW Build 3286242 on Wed Jul 28 13:10:47 MDT 2021
+# IP Build 3279568 on Wed Jul 28 16:48:48 MDT 2021
+# Start of session at: Sun Feb  6 10:09:45 2022
+# Process ID: 10616
+# Current directory: F:/XILINX/sv_library/sim
+# Command line: xsim.exe -nolog -mode tcl -source {xsim.dir/tb_snapshot/xsim_script.tcl}
+# Log file: 
+# Journal file: F:/XILINX/sv_library/sim\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/tb_snapshot/xsim_script.tcl
+source xsim_config.tcl

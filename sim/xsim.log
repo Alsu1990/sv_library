@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# xsim v2021.1.1 (64-bit)
+# SW Build 3286242 on Wed Jul 28 13:10:47 MDT 2021
+# IP Build 3279568 on Wed Jul 28 16:48:48 MDT 2021
+# Start of session at: Sun Feb  6 10:10:50 2022
+# Process ID: 18472
+# Current directory: F:/XILINX/sv_library/sim
+# Command line: xsim.exe -source {xsim.dir/tb_snapshot.wdb/xsim_script.tcl}
+# Log file: F:/XILINX/sv_library/sim/xsim.log
+# Journal file: F:/XILINX/sv_library/sim\xsim.jou
+#-----------------------------------------------------------
+start_gui
+source xsim.dir/tb_snapshot.wdb/xsim_script.tcl
+# set_param project.enableReportConfiguration 0
+# load_feature core
+# current_fileset
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/XILINX/Vivado/2021.1/data/ip'.
+current_fileset: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1364.707 ; gain = 0.000
+# xsim {tb_snapshot.wdb} -autoloadwcfg
+add_wave {{/axi4_master/wb_rst_i}} 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Feb  6 10:12:56 2022...

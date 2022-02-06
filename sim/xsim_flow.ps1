@@ -1,5 +1,5 @@
 
-$SOURCES_SV= "tb.sv"
+$SOURCES_SV= "axi_4_master_tb.sv"
 
 
 
@@ -14,6 +14,6 @@ Write-Output "### RUNNING SIMULATION ###"
 xsim tb_snapshot -tclbatch xsim_config.tcl -nolog
 
 Write-Output "### OPENING WAVES ###"
-xsim --gui adder_tb_snapshot.wdb
+xsim --gui tb_snapshot.wdb
 
 exit 0

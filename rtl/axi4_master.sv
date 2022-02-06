@@ -1,4 +1,4 @@
-timeunit 1ns/10ps;
+timeunit 1ns/1ns;
 
 
 module axi4_master #(
@@ -54,13 +54,19 @@ module axi4_master #(
         end
     end
 
+   always_ff @(posedge wb_clk_i) begin : read_from_slave
+        if ((!wb_we_i)&&(m_axi_rvalid)) begin
+            
+        end
+    end
+
     always_ff @(posedge wb_clk_i) begin : ack_logic
         if (wb_rst_i) wb_ack_o <= 1'b0;
-        else wb_ack_o <= ((wb_stb_i)&&(!wb_stall_o));
+        else wb_ack_o <= ((wb_stb_i)&&(!wb_stall_o)&&(m_axi_bvalid||m_axi_rvalid));
     end
-    
-    assign wb_stall_o = 1'b0;
 
+
+    assign wb_stall_o = 1'b0;
 //////////////////////////////////////////////////////////////////////////////////
 // axi4 interface
     typedef enum logic [2:0] { 
@@ -119,11 +125,15 @@ module axi4_master #(
             DO_WRITE: begin
                 m_axi_wdata <= data_q;
                 m_axi_awaddr <= addr_q;
-                m_axi_awvalid <= (m_axi_awready) ? 1'b0 : 1'b1; 
-                m_axi_wvalid <= (m_axi_wready) ? 1'b0 : 1'b1; 
+                m_axi_awvalid <= 1'b1; 
+                m_axi_wvalid <= 1'b1; 
+                m_axi_bready <= 1'b1;
+                    
+
             end
             FINISH_WRITE: begin
-                m_axi_bready <= (m_axi_bvalid) ? 1'b0 : 1'b1; 
+                m_axi_awvalid <= 1'b0;
+                m_axi_wvalid <= 1'b0; 
             end
         endcase
     end

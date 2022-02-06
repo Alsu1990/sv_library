@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2021.1.1 (64-bit)
+# SW Build 3286242 on Wed Jul 28 13:10:47 MDT 2021
+# IP Build 3279568 on Wed Jul 28 16:48:48 MDT 2021
+# Start of session at: Sun Feb  6 10:09:14 2022
+# Process ID: 6164
+# Current directory: F:/XILINX/sv_library/sim
+# Command line: wbtcv.exe -mode batch -source F:/XILINX/sv_library/sim/xsim.dir/tb_snapshot/webtalk/xsim_webtalk.tcl -notrace
+# Log file: F:/XILINX/sv_library/sim/webtalk.log
+# Journal file: F:/XILINX/sv_library/sim\webtalk.jou
+#-----------------------------------------------------------
+source F:/XILINX/sv_library/sim/xsim.dir/tb_snapshot/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'F:/XILINX/sv_library/sim/xsim.dir/tb_snapshot/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Feb  6 10:09:18 2022. For additional details about this file, please refer to the WebTalk help file at F:/XILINX/Vivado/2021.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Feb  6 10:09:18 2022...

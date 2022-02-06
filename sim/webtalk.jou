@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2021.1.1 (64-bit)
+# SW Build 3286242 on Wed Jul 28 13:10:47 MDT 2021
+# IP Build 3279568 on Wed Jul 28 16:48:48 MDT 2021
+# Start of session at: Sun Feb  6 10:10:05 2022
+# Process ID: 14792
+# Current directory: F:/XILINX/sv_library/sim
+# Command line: wbtcv.exe -mode batch -source F:/XILINX/sv_library/sim/xsim.dir/tb_snapshot/webtalk/xsim_webtalk.tcl -notrace
+# Log file: F:/XILINX/sv_library/sim/webtalk.log
+# Journal file: F:/XILINX/sv_library/sim\webtalk.jou
+#-----------------------------------------------------------
+source F:/XILINX/sv_library/sim/xsim.dir/tb_snapshot/webtalk/xsim_webtalk.tcl -notrace
